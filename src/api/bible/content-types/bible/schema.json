@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bibles",
+  "info": {
+    "singularName": "bible",
+    "pluralName": "bibles",
+    "displayName": "Book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Author": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Old Testament",
+        "New Testament"
+      ],
+      "default": "New Testament",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
